@@ -1,0 +1,54 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# config
+*.yml
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables file
+.env
+.env.test
+
+# Next.js build output
+.next
+out
+
+# misc
+*.7z
+*.zip
+*.yml
+yarn.lock
+
+# others
+notes
+.DS_Store
+yarn.lock
+
+# Now development config
+.vercel
+
+#Intellije IDE config
+.idea
+
+#gitlab-ci
+!.gitlab-ci.yml
