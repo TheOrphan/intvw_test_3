@@ -2,29 +2,29 @@ import React from 'react';
 import { Form, Input, Checkbox, Button } from 'antd';
 const formItemLayout = {
   labelCol: {
-    xs: {
+    md: {
       span: 24,
     },
-    sm: {
+    lg: {
       span: 6,
     },
   },
   wrapperCol: {
-    xs: {
+    md: {
       span: 24,
     },
-    sm: {
+    lg: {
       span: 18,
     },
   },
 };
 const tailFormItemLayout = {
   wrapperCol: {
-    xs: {
+    md: {
       span: 24,
       offset: 0,
     },
-    sm: {
+    lg: {
       span: 18,
       offset: 6,
     },

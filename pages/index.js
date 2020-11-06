@@ -27,20 +27,20 @@ export default function HomePage() {
   ];
 
   return (
-    <Row justify="center" style={{ padding: '3rem' }}>
-      <Col xs={{ span: 24 }} sm={{ span: 10 }}>
-        <Col span={24}>
+    <Row>
+      <Col
+        md={{ span: 24 }}
+        lg={{ span: 20, offset: 2 }}
+        style={{ width: 'auto', maxWidth: 'unset' }}
+      >
+        <div style={{ padding: '3rem 0 0' }}>
           <Steps progressDot current={current}>
             {steps.map(item => (
               <Step key={item.title} title={item.title} />
             ))}
           </Steps>
-        </Col>
-        <Col span={24}>
-          <Row justify="center" style={{ marginTop: 20 }}>
-            {steps[current].content}
-          </Row>
-        </Col>
+          <div style={{ margin: '3rem 1.5rem' }}>{steps[current].content}</div>
+        </div>
       </Col>
     </Row>
   );

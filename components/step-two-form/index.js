@@ -14,29 +14,29 @@ import NumberFormat from 'react-number-format';
 import { cc_brand_id } from 'utils/helpers/helper';
 const formItemLayout = {
   labelCol: {
-    xs: {
+    md: {
       span: 24,
     },
-    sm: {
+    lg: {
       span: 8,
     },
   },
   wrapperCol: {
-    xs: {
+    md: {
       span: 24,
     },
-    sm: {
+    lg: {
       span: 16,
     },
   },
 };
 const tailFormItemLayout = {
   wrapperCol: {
-    xs: {
+    md: {
       span: 24,
       offset: 0,
     },
-    sm: {
+    lg: {
       span: 16,
       offset: 8,
     },
@@ -63,7 +63,7 @@ export default function StepOne({ handleNext }) {
   return (
     <Form
       {...formItemLayout}
-      style={{ width: '100%' }}
+      style={{ width: '70%' }}
       form={form}
       name="register"
       onFinish={onFinish}
