@@ -7,6 +7,7 @@ const { Step } = Steps;
 
 export default function HomePage() {
   const [current, setCurrent] = React.useState(0);
+  const [latestValues, setValues] = React.useState({});
   const next = () => {
     setCurrent(current + 1);
   };
@@ -14,15 +15,21 @@ export default function HomePage() {
   const steps = [
     {
       title: 'Profile and Agreement',
-      content: <StepOne handleNext={next} />,
+      content: <StepOne handleNext={next} setValues={setValues} />,
     },
     {
       title: 'Membership and Payment',
-      content: <StepTwo handleNext={next} />,
+      content: (
+        <StepTwo
+          handleNext={next}
+          setValues={setValues}
+          latestValues={latestValues}
+        />
+      ),
     },
     {
       title: 'Finished',
-      content: <StepThree handleNext={next} />,
+      content: <StepThree handleNext={next} latestValues={latestValues} />,
     },
   ];
 

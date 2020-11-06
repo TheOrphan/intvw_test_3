@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Col, Button, Card, Typography } from 'antd';
+import { Col, Button, Card, Typography, Collapse } from 'antd';
 const { Title } = Typography;
-export default function StepThree() {
+const { Panel } = Collapse;
+export default function StepThree({ latestValues }) {
   return (
     <Col md={{ span: 24 }} lg={{ span: 16, offset: 4 }}>
       <Card>
@@ -34,6 +35,18 @@ export default function StepThree() {
           Let's start your journey
         </Button>
       </Card>
+
+      <Collapse style={{ marginTop: '3rem' }} ghost>
+        <Panel header="Values from form step 1 and 2" key="1">
+          <pre>
+            {JSON.stringify(
+              latestValues,
+              (key, value) => value || '',
+              4,
+            ).replace(/"([^"]+)":/g, '$1:')}
+          </pre>
+        </Panel>
+      </Collapse>
     </Col>
   );
 }

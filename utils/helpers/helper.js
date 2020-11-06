@@ -512,7 +512,7 @@ export function cc_brand_id(input_val) {
 
     // checks per each, as their could be multiple hits
     //fix: ordering matter in detection, otherwise can give false results in rare cases
-    let sel_brand = 'unknown';
+    let sel_brand = '';
     if (cur_val.match(jcb_regex)) {
       sel_brand = 'jcb';
     } else if (cur_val.match(amex_regex)) {
