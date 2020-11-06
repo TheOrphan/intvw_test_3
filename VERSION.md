@@ -2,9 +2,7 @@
  INTERVIEW TEST CPXI - NEXTJS - ANT DESIGN
 </p>
 
-## Version 0.1
-
-ASSIGNMENT
+## ASSIGNMENT
 
 <strong>Please create HTML page a registration wizard, which consists of 3 steps:</strong>
 <p>STEP 1:</p>
@@ -31,7 +29,6 @@ Fields: CC Number, CC Type (Visa, Master), CC exp. Date - all
 fields are mandatory</li>
 </ol>
 <p>STEP 3:</p>
-<p>FIELDS:</p>
 <ol>
   <li>Show notification that visitor has successfully registered.
 
